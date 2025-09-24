@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Phosphor Icons (Regular & Fill Styles) -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav_container">
+            <li>
+                <!-- Highlight Active Page -->
+                <a href="home.html" class="active"><i class="ph ph-house"></i> Home</a>
+            </li>
+            <li>
+                <a href="about.html"><i class="ph ph-user"></i> About</a>
+            </li>
+            <li>
+                <a href="projects.html"><i class="ph ph-suitcase-simple"></i> Projects</a>
+            </li>
+            <li>
+                <a href="contact.html"><i class="ph ph-phone"></i> Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Header Section -->
+    <header class="mainHeader">
+        <div class="container mainHeader_container">
+            <div class="mainHeader_image">
+                <img src="assets/Profil Ghibli.jpeg">
+            </div>
+            <!-- Introduction Text -->
+            <h5>Hi, my name is</h5>
+            <h2><span>Bariy</span> Aydika</h2>
+            <p>If you're looking to create a modern, fast and responsive website for yourself or your business,
+                then you've found the right man for the job.</p>
+            <!-- Call To Action Buttons -->
+            <div class="mainHeader_cta">
+                <a href="projects.html" class="btn"><i class="ph ph-briefcase"></i> My Projects</a>
+                <a href="https://wa.me/+6285959387676" target="_blank" class="btn primary"><i
+                        class="ph ph-handshake"></i> Hire Me</a>
+            </div>
+            <!-- Social Media Links -->
+            <menu class="header_socials">
+                <a href="https://www.linkedin.com/in/bariy-aydika/" target="_blank"><i
+                        class="ph ph-linkedin-logo"></i></a>
+                <a href="https://github.com/RaidanRei" target="_blank"><i class="ph ph-github-logo"></i></a>
+                <a href="https://www.instagram.com/raidanrei/" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                <a href="https://www.facebook.com/darker91" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+                <a href="https://x.com/BariyAydika" target="_blank"><i class="ph ph-x-logo"></i></a>
+            </menu>
+            <!-- Theme Toggle Button (Light/Dark Mode) -->
+            <button class="theme_btn"><i class="ph ph-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Footer Section -->
+    <footer>
+        <small class="copyright">
+            <!-- Dynamically Shows Current Year -->
+            <script>document.querySelector(".copyright").innerHTML = `&copy; Bariy Aydika | All Rights Reserved ${new Date().getFullYear()}`</script>
+        </small>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>

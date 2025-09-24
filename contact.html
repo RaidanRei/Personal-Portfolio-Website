@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Phosphor Icons (Regular & Fill Styles) -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav_container">
+            <li>
+                <a href="home.html"><i class="ph ph-house"></i> Home</a>
+            </li>
+            <li>
+                <a href="about.html"><i class="ph ph-user"></i> About</a>
+            </li>
+            <li>
+                <a href="projects.html"><i class="ph ph-suitcase-simple"></i> Projects</a>
+            </li>
+            <!-- Highlight Active Page -->
+            <li>
+                <a href="contact.html" class="active"><i class="ph ph-phone"></i> Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Theme Toggle Button (Light/Dark Mode) -->
+    <button class="theme_btn"><i class="ph ph-moon"></i></button>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <header class="section_header">
+            <h2>CONTACT ME</h2>
+            <p>Click/Tap on any of the social media icons below to message me directly. You can also fill the form
+                if you prefer that.</p>
+        </header>
+        <div class="container">
+            <div class="contact-content">
+                <!-- Left Column: Contact Form -->
+                <div class="column left">
+                    <h4>Just Say Hello</h4>
+                    <form>
+                        <!-- Input Fields -->
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" placeholder="Your Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn primary">Submit</button>
+                    </form>
+                </div>
+                <!-- Right Column: Contact Info -->
+                <div class="column right">
+                    <h3>Contact Info</h3>
+                    <p class="lead">Please fill out the form on this section to contact with me. <br>
+                        Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
+                    <!-- Contact Details -->
+                    <div class="items">
+                        <div class="item">
+                            <i class="ph ph-envelope-simple"></i>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p><span>raidanrei@gmail.com</span></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="ph ph-whatsapp-logo"></i>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p><span>+62 85959387676</span></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="ph ph-map-pin"></i>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p><span>Tangerang Selatan,</span></p>
+                                <p><span>Banten, Indonesia</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Visit my social profile and get connected</p>
+                        <!-- Social Media Profile Links -->
+                        <ul class="links">
+                            <li><a href="https://www.linkedin.com/in/bariy-aydika/"><i
+                                        class="ph ph-linkedin-logo"></i></a></li>
+                            <li><a href="https://github.com/RaidanRei"><i class="ph ph-github-logo"></i></a></li>
+                            <li><a href="https://www.instagram.com/raidanrei/"><i class="ph ph-instagram-logo"></i></a>
+                            </li>
+                            <li><a href="https://x.com/BariyAydika"><i class="ph ph-x-logo"></i></a></li>
+                            <li><a href="https://www.facebook.com/darker91"><i class="ph ph-facebook-logo"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <small class="copyright">
+            <!-- Dynamically Shows Current Year -->
+            <script>document.querySelector(".copyright").innerHTML = `&copy; Bariy Aydika | All Rights Reserved ${new Date().getFullYear()}`</script>
+        </small>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Phosphor Icons (Regular & Fill Styles) -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav_container">
+            <li>
+                <a href="home.html"><i class="ph ph-house"></i> Home</a>
+            </li>
+            <li>
+                <a href="about.html"><i class="ph ph-user"></i> About</a>
+            </li>
+            <!-- Highlight Active Page -->
+            <li>
+                <a href="projects.html" class="active"><i class="ph ph-suitcase-simple"></i> Projects</a>
+            </li>
+            <li>
+                <a href="contact.html"><i class="ph ph-phone"></i> Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Theme Toggle Button (Light/Dark Mode) -->
+    <button class="theme_btn"><i class="ph ph-moon"></i></button>
+
+    <!-- Portfolio/Projects Section -->
+    <section id="portfolio">
+        <div class="container portfolio_container">
+            <header class="section_header">
+                <h1>Projects</h1>
+                <p>Here are some of my recent projects.</p>
+            </header>
+            <!-- Portfolio Items List -->
+            <menu class="portfolio_list">
+                <!-- Project 1 -->
+                <div class="portfolio_item">
+                    <div class="portfolio_item-image">
+                        <img src="assets/p1.PNG">
+                    </div>
+                    <div class="portfolio_item-content">
+                        <h4>Bakery Web</h4>
+                        <p>Create a bakery website using HTML, CSS and JavaScript.</p>
+                        <!-- Buttons: Live Demo + Source Code -->
+                        <div class="portfolio_item-cta">
+                            <a href="https://raidanrei.github.io/Bakery-Website/" target="_blank" class="btn primary"><i
+                                    class="ph ph-link"></i></a>
+                            <a href="https://github.com/RaidanRei/Bakery-Website/" target="_blank" class="btn"><i
+                                    class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio_item">
+                    <div class="portfolio_item-image">
+                        <img src="assets/p2.PNG">
+                    </div>
+                    <div class="portfolio_item-content">
+                        <h4>Image Slider</h4>
+                        <p>Create image slider about soccer competitions using HTML, CSS and JavaScript.</p>
+                        <!-- Buttons: Live Demo + Source Code -->
+                        <div class="portfolio_item-cta">
+                            <a href="https://raidanrei.github.io/image-slider/" target="_blank" class="btn primary"><i
+                                    class="ph ph-link"></i></a>
+                            <a href="https://github.com/RaidanRei/image-slider" target="_blank" class="btn"><i
+                                    class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio_item">
+                    <div class="portfolio_item-image">
+                        <img src="assets/p3.PNG">
+                    </div>
+                    <div class="portfolio_item-content">
+                        <h4>Portfolio Web</h4>
+                        <p>Create a personal portfolio using HTML, CSS and JavaScript.</p>
+                        <!-- Buttons: Live Demo + Source Code -->
+                        <div class="portfolio_item-cta">
+                            <a href="#" target="_blank" class="btn primary"><i class="ph ph-link"></i></a>
+                            <a href="#" target="_blank" class="btn"><i class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="portfolio_item">
+                    <div class="portfolio_item-image">
+                        <img src="assets/p4.PNG">
+                    </div>
+                    <div class="portfolio_item-content">
+                        <h4>Race Car Game</h4>
+                        <p>Create a racing car game using Scratch Web.</p>
+                        <!-- Buttons: Live Demo + Source Code -->
+                        <div class="portfolio_item-cta">
+                            <a href="https://scratch.mit.edu/projects/1214408194/" target="_blank"
+                                class="btn primary"><i class="ph ph-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </menu>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container testimonials_container">
+            <header class="section_header">
+                <h2>testimonials</h2>
+                <p>This is what my clients say about me and my work.</p>
+            </header>
+            <!-- List of Client Testimonials -->
+            <ul class="testimonials_list">
+                <!-- Testimonial 1 -->
+                <li class="testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/Davina.enc">
+                    </div>
+                    <!-- Star Rating -->
+                    <span>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                    </span>
+                    <p>"I am very impressed with his seemingly unending knowledge, especially how
+                        quickly he completes each task within the set period of time. I'm very pleased and wouldn't
+                        hesitate to recommend him to others."</p>
+                    <h5>Davina</h5>
+                    <small>Owner of CoBi (Coding Bintaro)</small>
+                </li>
+                <!-- Testimonial 2 -->
+                <li class="testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/Putri.jpg">
+                    </div>
+                    <!-- Star Rating -->
+                    <span>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                    </span>
+                    <p>"His ability to solve problems quickly, even in areas that he may not have studied in the past.
+                        He's a quick study and would be a great asset to any team!"</p>
+                    <h5>Putri</h5>
+                    <small>Leader of CoBi (Coding Bintaro)</small>
+                </li>
+                <!-- Testimonial 3 -->
+                <li class="testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/Afry.enc">
+                    </div>
+                    <!-- Star Rating -->
+                    <span>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                    </span>
+                    <p>"Always available to help, incredibly proficient, hits deadlines without fail, hard working and
+                        trustworthy."</p>
+                    <h5>Afry</h5>
+                    <small>Head of HR Dompet Dhuafa</small>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <!-- Social Media Icons -->
+            <ul class="footer_socials">
+                <a href="https://www.linkedin.com/in/bariy-aydika/" target="_blank"><i
+                        class="ph ph-linkedin-logo"></i></a>
+                <a href="https://github.com/RaidanRei" target="_blank"><i class="ph ph-github-logo"></i></a>
+                <a href="https://www.instagram.com/raidanrei/" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                <a href="https://www.facebook.com/darker91" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+                <a href="https://x.com/BariyAydika" target="_blank"><i class="ph ph-x-logo"></i></a>
+            </ul>
+            <small class="copyright">
+                <!-- Dynamically Shows Current Year -->
+                <script>document.querySelector(".copyright").innerHTML = `&copy; Bariy Aydika | All Rights Reserved ${new Date().getFullYear()}`</script>
+            </small>
+        </div>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>

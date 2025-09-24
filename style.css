@@ -1,0 +1,983 @@
+/* =============================== Import Google Fonts =============================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* =============================== Global Reset
+   - Removes Default Browser Styles
+   - Ensures Consistent Base Across Browsers =============================== */
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+/* =============================== CSS Variables (Light Theme Default) =============================== */
+:root {
+    /* Primary brand color */
+    --color-primary: #0a8de4;
+    /* Grayscale palette */
+    --color-gray-0: #fff;
+    --color-gray-100: #ecf2f6;
+    --color-gray-200: #d9dfe7;
+    --color-gray-300: #bdcad6;
+    --color-gray-400: #bbbbbb;
+    --color-gray-500: #9c9c9c;
+    --color-gray-600: #6a6a6a;
+    --color-gray-700: #4b5156;
+    --color-gray-800: #33373a;
+    --color-gray-900: #0f1316;
+
+    /* Border Radius Sizes */
+    --radius-1: 0.3rem;
+    --radius-2: 0.6rem;
+    --radius-3: 0.9rem;
+    --radius-4: 1.5rem;
+    --radius-5: 2.2rem;
+
+    /* Transition For Hover/Focus Effects */
+    --transition: all 300ms ease;
+
+    /* Container Widths For Responsive Design */
+    --container-w-lg: 80%;
+    --container-w-md: 90%;
+    --container-w-sm: 92%;
+}
+
+/* =============================== Dark Theme Variables Applied When .dark Class is On <Body> =============================== */
+.dark {
+    --color-gray-0: #0c121d;
+    --color-gray-100: #1a212c;
+    --color-gray-200: #26313c;
+    --color-gray-300: #29374a;
+    --color-gray-400: #5b6879;
+    --color-gray-500: #7e8c9e;
+    --color-gray-600: #8f9dae;
+    --color-gray-700: #b4bdc7;
+    --color-gray-800: #e0e6ed;
+    --color-gray-900: #fff;
+}
+
+/* =============================== Base Elements =============================== */
+html {
+    scroll-behavior: smooth;
+    /* Smooth scrolling when clicking anchor links */
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: var(--color-gray-100);
+    color: var(--color-gray-900);
+    line-height: 1.6;
+    font-size: 0.9rem;
+    user-select: none;
+    /* Prevents text selection */
+}
+
+.container {
+    width: var(--container-w-lg);
+    margin-inline: auto;
+    /* Centers the container */
+}
+
+a {
+    color: var(--color-gray-900);
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* =============================== Typography =============================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--color-gray-900);
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.85rem;
+}
+
+h6 {
+    font-size: 0.75rem;
+}
+
+/* =============================== Buttons =============================== */
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-3);
+    background: var(--color-gray-0);
+    color: var(--color-gray-900);
+    transition-duration: var(--transition);
+}
+
+.btn.primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* =============================== Sections =============================== */
+section {
+    padding: 8rem 0;
+}
+
+/* Alternate Background For Odd Sections */
+section:nth-of-type(odd) {
+    background: var(--color-gray-0);
+}
+
+/* Section Headers (Titles + Description) */
+.section_header {
+    text-align: center;
+    margin-inline: auto;
+    width: 60%;
+}
+
+.section_header p {
+    margin: 0.4rem 0 3rem;
+}
+
+/* =============================== Navigation (Floating Nav) =============================== */
+nav {
+    background: var(--color-gray-0);
+    border-radius: var(--radius-4);
+    padding: 0.6rem;
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2rem 2rem -1rem rgba(0, 0, 0, 0.2), 0 -1rem 1rem -1rem rgba(255, 255, 255, 0.15);
+    z-index: 10;
+}
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+/* Nav Links (Icons Inside Rounded Buttons) */
+nav a {
+    width: 2.8rem;
+    aspect-ratio: 1/1;
+    padding: 10px;
+    background: var(--color-gray-100);
+    place-items: center;
+    border-radius: var(--radius-3);
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+nav a:hover,
+nav a.active {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* =============================== Main Header (Hero Section) =============================== */
+.mainHeader {
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+.mainHeader_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 6rem;
+}
+
+/* Animations For Fade-In & Moving Elements */
+.mainHeader_image,
+.mainHeader h5,
+.mainHeader h2,
+.mainHeader p,
+.mainHeader_cta {
+    margin-top: 0.8rem;
+}
+
+.mainHeader p {
+    max-width: 600px;
+    margin-inline: auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.mainHeader_image {
+    width: 15rem;
+    height: 17rem;
+    border-radius: 7.5rem 7.5rem 3rem 3rem;
+    overflow: hidden;
+    margin: 6rem auto 1.5rem;
+    opacity: 0;
+    animation: animateMainImage 2s 1s ease-out forwards;
+}
+
+@keyframes animateMainImage {
+    to {
+        opacity: 1;
+    }
+}
+
+.mainHeader h2 {
+    margin: 0.5rem 0;
+    /* Highlight First Name */
+}
+
+.mainHeader h2 span {
+    margin: 0.5rem 0;
+    color: var(--color-primary);
+}
+
+.mainHeader_cta {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    transform: translateY(6rem);
+    animation: fadeUp 2s 1.5s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mainHeader_cta a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mainHeader_cta a:hover {
+    background: var(--color-gray-900);
+    color: var(--color-gray-0);
+}
+
+.mainHeader_cta a i {
+    font-size: 1.3rem;
+}
+
+/* Social Links In Hero Section */
+.header_socials {
+    position: absolute;
+    right: 0;
+    bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header_socials a {
+    background-color: var(--color-gray-0);
+    color: var(--color-gray-900);
+    display: grid;
+    place-items: center;
+    padding: 0.5rem;
+    border-radius: var(--radius-2);
+    transition: var(--transition);
+}
+
+.header_socials a:hover {
+    background: var(--color-gray-900);
+    color: var(--color-gray-0);
+}
+
+/* =============================== Theme Toggle Button =============================== */
+.theme_btn {
+    position: fixed;
+    top: 2rem;
+    right: 10%;
+    background: var(--color-gray-0);
+    color: var(--color-gray-900);
+    width: 2.7rem;
+    height: 2.7rem;
+    font-size: 1.3rem;
+    border-radius: var(--radius-3);
+    display: grid;
+    place-items: center;
+    z-index: 2;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.theme_btn:hover {
+    background: var(--color-gray-900);
+    color: var(--color-gray-0);
+}
+
+/* =============================== About Section =============================== */
+.about_container {
+    display: grid;
+    grid-template-columns: 26rem auto;
+    gap: 8rem;
+    align-items: center;
+}
+
+/* Profile Image Container */
+.about_left {
+    aspect-ratio: 1/1;
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+/* Right Content (Bio + CV Button) */
+.about_right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.about_right h3 {
+    margin-bottom: 0.4rem;
+}
+
+.about_right a {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.about_right a:hover {
+    background: var(--color-gray-900);
+    color: var(--color-gray-0);
+}
+
+.about_right a i {
+    font-size: 1.3rem;
+}
+
+/* =============================== Education & Experience Section =============================== */
+.process_container {
+    display: grid;
+    gap: 2rem;
+}
+
+.timeline-box {
+    border: 1px solid var(--color-primary);
+}
+
+.timeline {
+    background-color: var(--color-gray-0);
+    padding: 1.9rem 0.95rem;
+    border-radius: 1.25rem;
+    width: 100%;
+    position: relative;
+}
+
+/* Vertical Timeline With Icons */
+.timeline .timeline-item {
+    position: relative;
+    padding-left: 2.5rem;
+    padding-bottom: 1.2rem;
+}
+
+.timeline .timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline .timeline-item::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 0.5rem;
+    background-color: var(--color-primary);
+    top: 0;
+}
+
+.timeline .timeline-icon {
+    position: absolute;
+    left: -0.25rem;
+    top: 0;
+    font-size: 1.5rem;
+    background-color: var(--color-gray-0);
+    color: var(--color-primary);
+}
+
+.timeline .timeline-date {
+    font-size: 0.875rem;
+    color: var(--color-gray-700);
+}
+
+.timeline .timeline-date .lni {
+    margin-right: 0.3rem;
+}
+
+.timeline .timeline-title {
+    margin: 0.75rem 0;
+}
+
+/* =============================== Projects Section (Portfolio Grid) =============================== */
+.portfolio_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 5rem;
+}
+
+.portfolio_item {
+    background: var(--color-gray-100);
+    border-radius: var(--radius-4);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+/* Hover Effect Adds Shadow */
+.portfolio_item:hover {
+    box-shadow: 0 3rem 3rem -2rem var(--color-gray-200);
+    cursor: default;
+}
+
+.portfolio_item-image {
+    height: 13rem;
+    border-radius: var(--radius-4);
+    overflow: hidden;
+    box-shadow: 0 2rem 1rem -1rem var(--color-gray-300);
+    transition: var(--transition);
+}
+
+.portfolio_item-content {
+    padding: 1.4rem 1rem;
+}
+
+.portfolio_item-content p {
+    margin: 0.7rem 0 1.5rem;
+}
+
+.portfolio_item-cta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portfolio_item-cta .btn {
+    border: 1px solid var(--color-primary);
+}
+
+.portfolio_item-cta .btn:hover {
+    background: var(--color-gray-900);
+    color: var(--color-gray-0);
+}
+
+.portfolio_item-cta i {
+    font-size: 1.1rem;
+}
+
+/* =============================== Testimonials Section =============================== */
+.testimonials_list {
+    width: 100%;
+    height: 28rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials_list::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(90deg, var(--color-gray-100), transparent, transparent, transparent, transparent, transparent, var(--color-gray-100));
+}
+
+/* Auto-Scrolling Testimonial Cards */
+.testimonial {
+    background: var(--color-gray-0);
+    text-align: center;
+    padding: 1.5rem;
+    padding-top: 3.5rem;
+    border-radius: var(--radius-5);
+    font-size: 0.9rem;
+    width: 16rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 100%;
+    animation: animateTestimonial 30s linear infinite;
+}
+
+@keyframes animateTestimonial {
+    to {
+        left: -16rem;
+    }
+}
+
+.testimonial:nth-of-type(1) {
+    animation-delay: -24s;
+}
+
+.testimonial:nth-of-type(2) {
+    animation-delay: -18s;
+}
+
+.testimonial:nth-of-type(3) {
+    animation-delay: -12s;
+}
+
+.testimonials_list:hover .testimonial {
+    animation-play-state: paused;
+}
+
+.testimonial_image {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    margin-inline: auto;
+    border-radius: 1.7rem;
+    overflow: hidden;
+    position: absolute;
+    top: -2.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0.4rem solid var(--color-gray-0);
+    box-shadow: 0 2rem 1.5rem -1rem var(--color-gray-300);
+}
+
+.testimonial span i {
+    color: gold;
+}
+
+.testimonial p {
+    margin: 0.5rem 0 1.2rem;
+    font-weight: 500;
+}
+
+/* =============================== Contact Section =============================== */
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-60px);
+}
+
+.contact h1 {
+    color: var(--color-gray-900);
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(20px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+
+.contact h5 {
+    font-weight: 700;
+    transform: translateY(-65px);
+}
+
+.contact .title::before {
+    background: var(--color-primary);
+}
+
+.contact .title::after {
+    background: var(--color-primary);
+}
+
+.contact .contact-content .column {
+    margin-top: 40px;
+    width: calc(50% - 50px);
+}
+
+.contact .contact-content .left h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Form Fields */
+.contact .contact-content .left .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+.contact .contact-content .left .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+}
+
+.contact .contact-content .left .form-group input:hover {
+    border: 2px solid var(--color-primary);
+}
+
+.contact .contact-content .left .form-group textarea:hover {
+    border: 2px solid var(--color-primary);
+}
+
+.contact .contact-content .left .btn {
+    padding: 8px 18px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.contact .contact-content .left .btn:hover {
+    color: var(--color-gray-0);
+    background: var(--color-gray-900);
+}
+
+.contact .contact-content .right h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact .contact-content .right p {
+    line-height: 1.6;
+}
+
+.contact .contact-content .right .items {
+    margin: 10px 0;
+}
+
+.contact .contact-content .right .items .item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contact .contact-content .right .items .item i {
+    padding: 15px;
+    border: 1px solid var(--color-primary);
+    border-radius: 30%;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact .contact-content .right .items .item span {
+    font-size: 14px;
+}
+
+.contact .contact-content .right .links {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+/* Social Icons In Contact Section */
+.contact .contact-content .right .links li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 15px;
+    font-size: 25px;
+}
+
+.contact .contact-content .right .links li a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact .contact-content .right .links li a:hover {
+    color: var(--color-primary);
+}
+
+/* =============================== Footer =============================== */
+footer {
+    background: var(--color-gray-200);
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 700;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_socials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer_socials a {
+    background: var(--color-gray-0);
+    color: var(--color-gray-900);
+    display: grid;
+    place-items: center;
+    height: 2.4rem;
+    aspect-ratio: 1/1;
+    transition: var(--transition);
+    border-radius: 0.7rem;
+}
+
+.footer_socials a:hover {
+    color: var(--color-gray-0);
+    background: var(--color-gray-900);
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* =============================== Media Queries - Adjust Layout For Tablets & Mobile =============================== */
+/* Queries For Tablets */
+@media (max-width: 960px) {
+
+    html,
+    body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body>main,
+    body>header,
+    body>section {
+        flex: 1;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: var(--container-w-md);
+    }
+
+    section {
+        padding-block: 6rem;
+    }
+
+    .section_header {
+        width: var(--container-w-md);
+    }
+
+    .nav_container {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .mainHeader_container {
+        padding-top: 6rem;
+    }
+
+    .mainHeader_container p {
+        text-align: justify;
+    }
+
+    .mainHeader {
+        height: 74vh;
+    }
+
+    .mainHeader p {
+        max-width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .theme_btn {
+        right: 5%;
+    }
+
+    .about_container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .about_left {
+        width: 40vmin;
+        max-width: 250px;
+        margin-inline: auto;
+        margin-top: 1.5rem;
+    }
+
+    .about_right p {
+        text-align: justify;
+    }
+
+    .about_right a {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact .contact-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .portfolio_list {
+        gap: 2rem;
+    }
+
+    .testimonials_list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        min-height: fit-content;
+        gap: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .testimonials_list::before {
+        background: transparent;
+    }
+
+    .testimonial {
+        position: relative;
+        animation: none;
+        left: 0;
+        width: auto;
+    }
+
+    .contact .contact-content .column {
+        width: 100%;
+    }
+}
+
+/* Queries For Mobile Phones */
+@media (max-width: 600px) {
+    nav {
+        margin-bottom: 3rem;
+    }
+
+    body {
+        padding-top: 3rem;
+    }
+
+    nav a {
+        width: 2.8rem;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0;
+    }
+
+    nav a i {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        width: var(--container-w-sm);
+    }
+
+    .section_header {
+        width: var(--container-w-sm);
+    }
+
+    .mainHeader {
+        height: 90vh;
+        padding-top: 5rem;
+        overflow: hidden;
+    }
+
+    .mainHeader_container {
+        padding-top: 1.5rem;
+    }
+
+    .mainHeader_image {
+        margin-top: 1rem;
+    }
+
+    .mainHeader h5,
+    .mainHeader h2,
+    .mainHeader p,
+    .mainHeader_cta {
+        margin-top: 0.5rem;
+    }
+
+    .theme_btn {
+        right: 1rem;
+    }
+
+    .header_socials {
+        display: none;
+    }
+
+    .about_left {
+        width: 70%;
+    }
+
+    .testimonials_list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        height: auto;
+        overflow: visible;
+    }
+
+    .testimonial {
+        position: relative;
+        animation: none;
+        width: 100%;
+        left: 0;
+    }
+
+    .testimonial p {
+        text-align: justify;
+    }
+
+    .contact .contact-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact .contact-content .left {
+        margin-bottom: 2rem;
+    }
+
+    .contact .contact-content .right .items {
+        margin-top: 1rem;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
