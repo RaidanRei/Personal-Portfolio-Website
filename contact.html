@@ -126,15 +126,21 @@
         </small>
     </footer>
 
+    <!-- Form Submit -->
     <script>
         function sendMessage() {
+            // Get the value from the input field with id="name"
             const name = document.getElementById("name").value;
+            // Get the value from the input field with id="email"
             const email = document.getElementById("email").value;
+            // Get the value from the input field with id="subject"
             const subject = document.getElementById("subject").value;
+            // Get the value from the textarea or input with id="message"
             const message = document.getElementById("message").value;
 
+            // Construct the WhatsApp API URL with pre-filled message
             const url = "https://api.whatsapp.com/send?phone=6285959387676&text=Hello%20Admin%2C%0AMy%20name%20is%20*" + name + "*%0AMy%20e-mail%20*" + email + "*%0A*" + subject + "*%0A%0A*" + message + "*";
-
+            // Open the constructed WhatsApp URL in a new browser tab/window
             window.open(url);
         }
     </script>
