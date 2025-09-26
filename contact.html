@@ -21,7 +21,7 @@
     <nav>
         <ul class="nav_container">
             <li>
-                <a href="home.html"><i class="ph ph-house"></i> Home</a>
+                <a href="index.html"><i class="ph ph-house"></i> Home</a>
             </li>
             <li>
                 <a href="about.html"><i class="ph ph-user"></i> About</a>
@@ -51,19 +51,19 @@
                 <!-- Left Column: Contact Form -->
                 <div class="column left">
                     <h4>Just Say Hello</h4>
-                    <form>
+                    <form onsubmit="sendMessage()">
                         <!-- Input Fields -->
                         <div class="form-group">
-                            <input type="text" name="name" id="name" placeholder="Your Name">
+                            <input type="text" name="name" id="name" required placeholder="Your Name">
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" id="email" placeholder="Your Email">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="subject" id="subject" placeholder="Your Subject">
+                            <input type="text" name="subject" id="subject" required placeholder="Your Subject">
                         </div>
                         <div class="form-group">
-                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                            <textarea name="message" id="message" required placeholder="Your Message"></textarea>
                         </div>
                         <!-- Submit Button -->
                         <button type="submit" class="btn primary">Submit</button>
@@ -126,6 +126,18 @@
         </small>
     </footer>
 
+    <script>
+        function sendMessage() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            const url = "https://api.whatsapp.com/send?phone=6285959387676&text=Hello%20Admin%2C%0AMy%20name%20is%20*" + name + "*%0AMy%20e-mail%20*" + email + "*%0A*" + subject + "*%0A%0A*" + message + "*";
+
+            window.open(url);
+        }
+    </script>
     <!-- Link JS -->
     <script src="main.js"></script>
 </body>
