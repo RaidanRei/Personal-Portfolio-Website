@@ -33,3 +33,46 @@ The website supports both **light and dark themes**, which are remembered across
    ```
 
 ![](./assets/thumbnail_portfolio.webp)
+
+Open the project folder
+
+cd Personal-Portfolio-Website
+
+Run locally
+
+You can open index.html directly in your browser, or use a local server / Live Server in VSCode to view with routing.
+
+🗂 Project Structure
+Personal-Portfolio-Website/
+├── assets/ # Images, icons, screenshots
+├── index.html
+├── about.html
+├── projects.html
+├── contact.html
+├── style.css
+├── main.js # Script for theme toggle etc.
+└── README.md # This file
+
+✅ Contribution
+
+You’re welcome to fork this project and make enhancements. Some ideas:
+
+Add animations or transitions (scroll, fade, slide)
+
+Validate and integrate a working backend for contact form
+
+Add filtering or sorting for projects
+
+Improve accessibility (ARIA labels, keyboard nav)
+
+Optimize images, lazy loading, performance improvements
+
+📝 License
+
+This project is open source under the MIT License. You are free to use, modify, and distribute it.
+
+👨‍💻 Author
+
+RaidanRei 🔗 [GitHub Profile](https://github.com/RaidanRei)
+
+If you like this project, feel free to ⭐ star the repository!
