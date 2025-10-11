@@ -45,13 +45,21 @@ You can open index.html directly in your browser, or use a local server / Live S
 🗂 Project Structure
 
 Personal-Portfolio-Website/
+
 ├── assets/ # Images, icons, screenshots
+
 ├── index.html
+
 ├── about.html
+
 ├── projects.html
+
 ├── contact.html
+
 ├── style.css
+
 ├── main.js # Script for theme toggle etc.
+
 └── README.md # This file
 
 ✅ Contribution
