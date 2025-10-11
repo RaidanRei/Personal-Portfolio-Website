@@ -43,6 +43,7 @@ Run locally
 You can open index.html directly in your browser, or use a local server / Live Server in VSCode to view with routing.
 
 🗂 Project Structure
+
 Personal-Portfolio-Website/
 ├── assets/ # Images, icons, screenshots
 ├── index.html
