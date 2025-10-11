@@ -40,30 +40,24 @@ The website supports both **light and dark themes**, which are remembered across
    cd Personal-Portfolio-Website
    ```
 
-3. Run locally
+3. Run locally:
    ```bash
    open index.html
    ```
 
-🗂 Project Structure
+🗂 Project Structure:
 
+```bash
 Personal-Portfolio-Website/
-
-├── assets/ # Images, icons, screenshots
-
+├── assets/           # Images, icons, screenshots
 ├── index.html
-
 ├── about.html
-
 ├── projects.html
-
 ├── contact.html
-
 ├── style.css
-
-├── main.js # Script for theme toggle etc.
-
-├── README.md # This file
+├── main.js            # Script for theme toggle etc.
+└── README.md          # This file
+```
 
 ✅ Contribution
 
