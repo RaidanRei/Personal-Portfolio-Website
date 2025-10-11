@@ -45,6 +45,8 @@ The website supports both **light and dark themes**, which are remembered across
    open index.html
    ```
 
+---
+
 ## 🗂 Project Structure:
 
 ```bash
@@ -58,6 +60,8 @@ Personal-Portfolio-Website/
 ├── main.js            # Script for theme toggle etc.
 └── README.md          # This file
 ```
+
+---
 
 ## ✅ Contribution
 
@@ -73,9 +77,11 @@ Personal-Portfolio-Website/
 
 - Optimize images, lazy loading, performance improvements
 
+---
+
 ## 📝 License
 
-This project is open source under the MIT License. You are free to use, modify, and distribute it.
+## This project is open source under the MIT License. You are free to use, modify, and distribute it.
 
 ## 👨‍💻 Author
 
