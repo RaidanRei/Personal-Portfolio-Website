@@ -34,11 +34,11 @@ The website supports both **light and dark themes**, which are remembered across
 
 ![](./assets/thumbnail_portfolio.webp)
 
-Open the project folder
+2. Open the project folder
 
 cd Personal-Portfolio-Website
 
-Run locally
+3. Run locally
 
 You can open index.html directly in your browser, or use a local server / Live Server in VSCode to view with routing.
 
