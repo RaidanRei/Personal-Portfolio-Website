@@ -63,7 +63,7 @@ Personal-Portfolio-Website/
 
 ├── main.js # Script for theme toggle etc.
 
-└── README.md # This file
+├── README.md # This file
 
 ✅ Contribution
 
