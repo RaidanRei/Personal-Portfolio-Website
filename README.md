@@ -83,6 +83,8 @@ Personal-Portfolio-Website/
 
 ## This project is open source under the MIT License. You are free to use, modify, and distribute it.
 
+---
+
 ## 👨‍💻 Author
 
 RaidanRei 🔗 [GitHub Profile](https://github.com/RaidanRei)
