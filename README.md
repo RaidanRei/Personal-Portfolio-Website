@@ -7,7 +7,7 @@ This project is designed to showcase personal details, skills, experiences, and 
 
 ## 🌐 Live Demo
 
-👉 **[View the Website](https://raidanrei.github.io/image-slider/)**  
+👉 **[View the Website](https://raidanrei.github.io/Personal-Portfolio-Website/)**  
 Experience the interactive slider in action!
 
 ---
