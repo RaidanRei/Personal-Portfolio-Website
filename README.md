@@ -61,17 +61,17 @@ Personal-Portfolio-Website/
 
 ✅ Contribution
 
-You’re welcome to fork this project and make enhancements. Some ideas:
+- You’re welcome to fork this project and make enhancements. Some ideas:
 
-Add animations or transitions (scroll, fade, slide)
+- Add animations or transitions (scroll, fade, slide)
 
-Validate and integrate a working backend for contact form
+- Validate and integrate a working backend for contact form
 
-Add filtering or sorting for projects
+- Add filtering or sorting for projects
 
-Improve accessibility (ARIA labels, keyboard nav)
+- Improve accessibility (ARIA labels, keyboard nav)
 
-Optimize images, lazy loading, performance improvements
+- Optimize images, lazy loading, performance improvements
 
 📝 License
 
