@@ -45,7 +45,7 @@ The website supports both **light and dark themes**, which are remembered across
    open index.html
    ```
 
-🗂 Project Structure:
+## 🗂 Project Structure:
 
 ```bash
 Personal-Portfolio-Website/
@@ -59,7 +59,7 @@ Personal-Portfolio-Website/
 └── README.md          # This file
 ```
 
-✅ Contribution
+## ✅ Contribution
 
 - You’re welcome to fork this project and make enhancements. Some ideas:
 
@@ -73,11 +73,11 @@ Personal-Portfolio-Website/
 
 - Optimize images, lazy loading, performance improvements
 
-📝 License
+## 📝 License
 
 This project is open source under the MIT License. You are free to use, modify, and distribute it.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 RaidanRei 🔗 [GitHub Profile](https://github.com/RaidanRei)
 
