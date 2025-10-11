@@ -87,7 +87,7 @@ This project is open source under the MIT License. You are free to use, modify, 
 
 ## 👨‍💻 Author
 
-RaidanRei 🔗 [GitHub Profile](https://github.com/RaidanRei)
+GitHub Profile 🔗 [RaidanRei](https://github.com/RaidanRei)
 
 If you like this project, feel free to ⭐ star the repository!
 
