@@ -5,6 +5,22 @@ This project is designed to showcase personal details, skills, experiences, and 
 
 ---
 
+## 🌐 Live Demo
+
+👉 **[View the Website](https://raidanrei.github.io/image-slider/)**  
+Experience the interactive slider in action!
+
+---
+
+## 📸 Preview
+
+| Screenshot |
+| ---------- |
+
+![Screenshot](./assets/thumbnail_portfolio.webp)
+
+---
+
 ## 📖 Description
 
 The Personal Portfolio Website is a **multi-page responsive web application** consisting of:
@@ -28,11 +44,10 @@ The website supports both **light and dark themes**, which are remembered across
 ## 📦 Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/YourUsername/personal-portfolio.git
    ```
-
-![](./assets/thumbnail_portfolio.webp)
 
 2. Open the project folder:
 
